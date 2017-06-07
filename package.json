@@ -1,0 +1,25 @@
+{
+  "name": "mdeval",
+  "version": "0.0.1",
+  "description": "Execute JavaScript in your MD files",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape 'tests/**/*.ts' | tap-spec",
+    "coverage": "nyc --all --extension .ts --require ts-node/register node_modules/tape/bin/tape 'tests/**/*.ts'"
+  },
+  "author": "Jordan Drake <jordan@jdrake.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/commander": "2.9.1",
+    "@types/node": "7.0.27",
+    "@types/tape": "4.2.30",
+    "nyc": "11.0.2",
+    "tap-spec": "4.1.1",
+    "tape": "4.6.3",
+    "ts-node": "3.0.4",
+    "typescript": "2.3.4"
+  },
+  "dependencies": {
+    "commander": "2.9.0"
+  }
+}
